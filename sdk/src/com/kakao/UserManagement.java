@@ -1,4 +1,5 @@
 /**
+ * Copyright 2014 Minyoung Jeong <kkungkkung@gmail.com>
  * Copyright 2014 Kakao Corp.
  *
  * Redistribution and modification in source or binary forms are not permitted without specific prior written permission. 
