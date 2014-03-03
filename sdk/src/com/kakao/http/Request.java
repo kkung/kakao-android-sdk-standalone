@@ -23,11 +23,34 @@ import java.util.Map;
  * @author kkung
  */
 public interface Request {
+
+    /**
+     * @return 요청 주소
+     */
     String getUrl();
+
+    /**
+     * @return 요청에 포함할 Header
+     */
     Map<String, String> getHeaders();
+
+    /**
+     * @return 요청의 HTTP Verb
+     */
     String getMethod();
+
+    /**
+     * @return POST할 데이터가 있는지 여부
+     */
     boolean hasPayload();
+
+    /**
+     * @return 요청시 사용할 {@link java.nio.charset.Charset}의 이름
+     */
     String getCharSet();
 
+    /**
+     * @return POST할 내용
+     */
     Object getPayload();
 }

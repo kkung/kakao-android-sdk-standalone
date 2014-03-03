@@ -24,10 +24,30 @@ import java.io.OutputStream;
  * @author kkung
  */
 public interface BodyPart {
+
+    /**
+     * @return Part에 포함될 Header
+     */
     String getPartHeaderString();
+
+    /**
+     * Part의 인코딩된 결과를 반환합니다.
+     * @param encoding Part를 인코딩할 {@link java.nio.charset.Charset}의 이름
+     * @return Part 내용
+     * @throws IOException
+     */
     byte[] getBody(String encoding) throws IOException;
 
+    /**
+     * @return {@link com.kakao.http.BodyPart#copy(java.io.OutputStream)}를 지원하는지 여부
+     */
     boolean isSupportCopy();
 
+    /**
+     * {@link com.kakao.http.BodyPart#getBody(String)})와는 다르게
+     * 직접 {@link java.io.OutputStream}으로 내용을 전송합니다.
+     * @param os Part의 내용이 기록될 {@link java.io.OutputStream}
+     * @throws IOException
+     */
     void copy(OutputStream os) throws IOException;
 }
