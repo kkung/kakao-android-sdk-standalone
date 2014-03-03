@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">카카오톡 샘플</string>
+    <string name="profile_button">프로필</string>
+    <string name="country_label">국가코드</string>
+</resources>

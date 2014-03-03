@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_com_kakao_sdk_loading">Loading…</string>
+
+    <!-- for usermgmt -->
+    <string name="com_kakao_login_button">Log in with KakaoAccount</string>
+    <string name="com_kakao_logout_button">Log out</string>
+    <string name="com_kakao_confirm_logout">Are you sure to log out from this app?</string>
+    <string name="com_kakao_ok_button">OK</string>
+    <string name="com_kakao_cancel_button">Cancel</string>
+    <string name="com_kakao_unlink_button">Unlink</string>
+    <string name="com_kakao_confirm_unlink">Are you sure to unlink from this app?</string>
+    <string name="com_kakao_profile_nickname">Nickname</string>
+    <string name="com_kakao_profile_userId">Kakao User ID</string>
+
+    <!-- for kakaolink -->
+    <string name="com_kakao_alert_appKey">need to declare com.kakao.sdk.AppKey in your AndroidManifest.xml</string>
+    <string name="com_kakao_alert_install_kakaotalk">There is no installed KakaoTalk version higher than 4.2.0</string>
+</resources>

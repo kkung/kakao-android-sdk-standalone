@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/name"
+        style="@style/com_kakao_profile_property_label" />
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/com_kakao_profile_property_value" />
+
+    <TextView
+        android:text="@string/age"
+        style="@style/com_kakao_profile_property_label" />
+
+    <EditText
+        android:id="@+id/age"
+        style="@style/com_kakao_profile_property_value" />
+
+    <TextView
+        android:text="@string/gender"
+        style="@style/com_kakao_profile_property_label" />
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/com_kakao_profile_property_margin"
+        android:layout_marginLeft="@dimen/com_kakao_profile_property_margin"
+        android:layout_marginRight="@dimen/com_kakao_profile_property_margin"
+        android:textSize="@dimen/com_kakao_profile_property_text"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/com_kakao_padding"
+        android:entries="@array/gender_types" />
+</LinearLayout>

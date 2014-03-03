@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="com_kakao_profile_property_margin">10dp</dimen>
+    <dimen name="com_kakao_profile_property_text">15sp</dimen>
+    <dimen name="com_kakao_padding">10dp</dimen>
+</resources>

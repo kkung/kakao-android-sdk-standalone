@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KakaoTalkSample</string>
+    <string name="profile_button">profile</string>
+    <string name="country_label">country ISO</string>
+</resources>

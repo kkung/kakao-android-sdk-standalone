@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">카카오스토리 샘플</string>
+    <string name="profile_button">프로필</string>
+    <string name="upload_button">업로드</string>
+    <string name="post_button">포스팅</string>
+    <string name="birthday_label">생일</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/splash_background_brown"
+        android:padding="70dp"
+        android:src="@drawable/splash_kakao_logo"
+        android:contentDescription="splash background image1" />
+
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingTop="100dp"-->
+        <!--android:text="@string/splash_logo"-->
+        <!--android:textSize="20sp" -->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#694f53"/>-->
+
+
+    <ImageView
+        android:id="@+id/splash_activity_iv_kakao"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/splash_background_yellow"
+        android:padding="70dp"
+        android:src="@drawable/splash_kakao_logo"
+        android:contentDescription="splash background image2" />
+
+</RelativeLayout>

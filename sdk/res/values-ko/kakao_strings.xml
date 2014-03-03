@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for usermgmt -->
+    <string name="com_kakao_login_button">카카오계정으로 로그인</string>
+    <string name="com_kakao_logout_button">로그아웃</string>
+    <string name="com_kakao_confirm_logout">이 앱을 로그아웃 하시겠습니까?</string>
+    <string name="com_kakao_ok_button">확인</string>
+    <string name="com_kakao_cancel_button">취소</string>
+    <string name="com_kakao_unlink_button">탈퇴</string>
+    <string name="com_kakao_confirm_unlink">이 앱을 탈퇴하시겠습니까?</string>
+    <string name="com_kakao_profile_nickname">별명</string>
+    <string name="com_kakao_profile_userId">카카오 사용자 ID</string>
+
+    <!-- for kakaolink -->
+    <string name="com_kakao_alert_appKey">AndroidManifest.xml에 com.kakao.sdk.AppKey을 선언해야 합니다.</string>
+    <string name="com_kakao_alert_install_kakaotalk">버젼 4.2.0이상의 카카오톡이 필요합니다.</string>
+</resources>

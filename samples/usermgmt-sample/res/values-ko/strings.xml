@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">사용자 관리 샘플</string>
+    <string name="signup_button">가입</string>
+    <string name="me_button">내정보</string>
+    <string name="update_profile_button">업데이트</string>
+
+    <string name="name">이름을 입력하세요.</string>
+    <string name="age">나이를 입력하세요.</string>
+    <string name="gender">성별을 입력하세요.</string>
+
+    <string-array name="gender_types">
+        <item>여</item>
+        <item>남</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="46dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="horizontal"
+    android:background="@color/title_background" >
+    
+    <TextView
+        android:id="@+id/activity_title_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textColor="@color/title_text"
+        android:textStyle="bold"
+        android:gravity="center_vertical" />
+    
+</LinearLayout>

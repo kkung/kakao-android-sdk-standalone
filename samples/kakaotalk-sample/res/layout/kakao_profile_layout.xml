@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kakao_profile_boxbg"
+        android:clickable="true"
+        android:padding="4dp" >
+
+    <ImageView
+            android:id="@+id/com_kakao_profile_image"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/kakao_default_profile_image" />
+
+        <ImageView
+            android:id="@+id/profile_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/kakao_editable_profile" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/com_kakao_profile_nickname"
+            style="@style/com_kakao_profile_property_label" />
+        <EditText
+            android:id="@+id/com_kakao_profile_nickname"
+            style="@style/com_kakao_profile_property_value"/>
+        <TextView
+            android:text="@string/com_kakao_profile_userId"
+            style="@style/com_kakao_profile_property_label" />
+        <TextView
+            android:id="@+id/com_kakao_profile_userId"
+            style="@style/com_kakao_profile_property_label"/>
+    </LinearLayout>
+</LinearLayout>

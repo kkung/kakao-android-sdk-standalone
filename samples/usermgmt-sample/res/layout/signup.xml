@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.kakao.sample.usermgmt.ExtraUserPropertyLayout
+        android:id="@+id/extra_user_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/com_kakao_profile_property_margin"
+        android:layout_marginLeft="@dimen/com_kakao_profile_property_margin"
+        android:layout_marginRight="@dimen/com_kakao_profile_property_margin"
+        android:textSize="@dimen/com_kakao_profile_property_text"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/com_kakao_padding"
+        android:text="@string/signup_button"/>
+
+</LinearLayout>

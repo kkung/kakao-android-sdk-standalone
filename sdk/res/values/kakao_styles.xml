@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="com_kakao_profile_property_label" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/com_kakao_profile_property_margin</item>
+        <item name="android:layout_marginLeft">@dimen/com_kakao_profile_property_margin</item>
+        <item name="android:layout_marginRight">@dimen/com_kakao_profile_property_margin</item>
+        <item name="android:textSize">@dimen/com_kakao_profile_property_text</item>
+        <item name="android:textColor">@color/com_kakao_profile_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="com_kakao_profile_property_value" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/com_kakao_profile_property_margin</item>
+        <item name="android:layout_marginLeft">@dimen/com_kakao_profile_property_margin</item>
+        <item name="android:layout_marginRight">@dimen/com_kakao_profile_property_margin</item>
+        <item name="android:textSize">@dimen/com_kakao_profile_property_text</item>
+        <item name="android:paddingLeft">@dimen/com_kakao_padding</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UserMgmtSample</string>
+    <string name="signup_button">Signup</string>
+    <string name="me_button">Me</string>
+    <string name="update_profile_button">Update</string>
+
+    <string name="name">Write Your Name</string>
+    <string name="age">Write Your Age</string>
+    <string name="gender">Write Your Gender</string>
+
+    <string-array name="gender_types">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+</resources>

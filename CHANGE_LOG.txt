@@ -1,0 +1,47 @@
+1.0.14
+[변경]
+1. loginfree 앱에서도 GlobalApplication 사용해야함.
+2. 카카오링크 사용법 변경
+KakaoLink : 앱별로 하나. singleton
+KakaoLinkMessageBuilder : 메시지당 하나
+sendMessage : 메시지 보낼때 마다 호출, 이때 callerActivity를 param으로 넘긴다.
+
+[향상]
+1. GlobalApplication 선언하지 않은 경우, Session을 intialize 하지 않는 경우 에러 메시지 추가
+2. 4.2.0 이상 카카오톡 미설치시 alert 다국어 적용
+
+1.0.13 (2014.02.14)
+1. story upload max size 초과시 EXCEED_MAX_UPLOAD_SIZE 코드 추가
+
+1.0.12 (2014.02.10)
+1. KakaoTalkLinkMessageBuilder addAppButton access modifier 변경
+    package-private -> public
+
+1.0.11 (2014.02.10)
+1. sample과 template resource file name 변경
+    kakao-strings.xml -> kakao_strings.xml
+
+1.0.9 1.0.10 (2014.02.07)
+1. KakaoStoryService : signature 변경
+    void requestProfile(HttpResponseHandler) -> void requestProfile(KakaoStoryHttpResponseHandler<KakaoStoryProfile>)
+    void requestUpload(HttpResponseHandler responseHandler, File) -> void requestUpload(KakaoStoryHttpResponseHandler<KakaoStoryUpload>, File)
+    void requestPost(HttpResponseHandler, Bundle) -> void requestPost(KakaoStoryHttpResponseHandler<Void>, Bundle)
+2. KakaoTalkService : signature 변경
+    void requestProfile(HttpResponseHandler) -> void requestProfile(KakaoTalkHttpResponseHandler<KakaoTalkProfile>)
+3. resource name 변경
+   카카오 리소스에는 모두 kakao_ prefix가 붙음
+
+1.0.8 (2014.01.27)
+1. KakaoStoryHttpResponseHandler/KakaoTalkHttpResponseHandler : signature 변경
+    void onSessionClosed() -> void onHttpSessionClosedFailure(APIErrorResult)
+
+2. UnlinkResponseCallback/SignupResponseCallback/MeResponseCallback/UpdateProfileResponseCallback : signature 변경
+    void onFailureSessionClosed(APIErrorResult) -> void onSessionClosedFailure(APIErrorResult)
+    void onFailure(SessionState, APIErrorResult) -> void onFailure(APIErrorResult)
+
+3. LoginBaseActivity : 삭제
+
+4. LogoutButton/UnlinkButton : style 제거, #setConfirmLogout 제거.
+
+1.0.7 (2014.01.14)
+초기배포

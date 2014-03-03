@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">카카오링크 샘플</string>
+
+    <string name="text_type">텍스트 형식을 사용하시겠습니까?</string>
+    <string-array name="text_types">
+        <item>@string/use_text</item>
+        <item>@string/no_text</item>
+    </string-array>
+
+    <string name="link_type">링크 형식을 사용하시겠습니까?</string>
+    <string-array name="link_types">
+        <item>@string/use_weblink</item>
+        <item>@string/use_applink</item>
+        <item>@string/no_link</item>
+    </string-array>
+
+    <string name="image_type">이미지 형식을 사용하시겠습니까?</string>
+    <string-array name="image_types">
+        <item>@string/use_image</item>
+        <item>@string/no_image</item>
+    </string-array>
+
+    <string name="button_type">버튼 형식을 사용하시겠습니까?</string>
+    <string-array name="button_types">
+        <item>@string/use_appbutton</item>
+        <item>@string/use_webbutton</item>
+        <item>@string/no_button</item>
+    </string-array>
+
+    <string name="send_button">보내기</string>
+    <string name="clear_button">메시지 다시 구성하기</string>
+    <string name="reset_message">메시지 구성을 다시 하시겠습니까?</string>
+
+    <string name="use_text">텍스트 사용</string>
+    <string name="no_text">텍스트 사용안함</string>
+    <string name="use_applink">앱링크 사용</string>
+    <string name="use_weblink">웹링크 사용</string>
+    <string name="no_link">링크 사용안함</string>
+    <string name="use_image">이미지 사용</string>
+    <string name="no_image">이미지 사용안함</string>
+    <string name="use_appbutton">앱버튼 사용</string>
+    <string name="use_webbutton">웹버튼 사용</string>
+    <string name="no_button">버튼 사용안함</string>
+
+    <string name="kakaolink_text">카카오링크 샘플앱에 오신 것을 환영합니다.</string>
+    <string name="kakaolink_applink">앱으로 이동</string>
+    <string name="kakaolink_weblink">카카오톡 홈페이지로 이동</string>
+    <string name="kakaolink_appbutton">앱으로 이동</string>
+    <string name="kakaolink_webbutton">카카오 홈페이지로 이동</string>
+    <string name="send_message">아래 메시지를 보내시겠습니까?</string>
+</resources>
