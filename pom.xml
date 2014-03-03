@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2014 Minyoung Jeong
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.simpligility.maven</groupId>
+    <artifactId>progressive-organization-pom</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <groupId>com.kakao.android</groupId>
+  <artifactId>kakao-android-sdk-standalone</artifactId>
+  <version>1.0.6</version>
+  <packaging>pom</packaging>
+
+  <name>Kakao Android SDK - Standalone</name>
+  <url>https://github.com/kkung/kakao-android-sdk-standalone</url>
+
+  <licenses>
+      <license>
+          <name>Apache 2.0</name>
+          <url>LICENSE.txt</url>
+      </license>
+  </licenses>
+
+  <developers>
+      <developer>
+          <name>Minyoung Jeong</name>
+          <url>http://kkung.net</url>
+          <email>kkungkkung@gmail.com</email>
+      </developer>
+      <developer>
+          <name>Kakao Corp</name>
+          <url>https://developers.kakao.com/</url>
+      </developer>
+  </developers>
+
+  <modules>
+      <module>sdk</module>
+      <module>templates</module>
+      <module>samples</module>
+  </modules>
+
+  <scm>
+      <url>https://github.com/kkung/kakao-android-sdk-standalone/tree/${scm.branch}</url>
+      <connection>scm:git:ssh://git@github.com:kkung/kakao-android-sdk-standalone.git</connection>
+      <developerConnection>scm:git:ssh://git@github.com:kkung/kakao-android-sdk-standalone.git</developerConnection>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <scm.branch>master</scm.branch>
+    <maven.version>3.1.1</maven.version>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+          <artifactId>android-maven-plugin</artifactId>
+          <version>3.8.2</version>
+          <configuration>
+              <sdk>
+                  <platform>16</platform>
+              </sdk>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-scm-plugin</artifactId>
+        <configuration>
+          <scmVersionType>branch</scmVersionType>
+          <scmVersion>${scm.branch}</scmVersion>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Build-Source-Version>1.6</Build-Source-Version>
+              <Build-Target-Version>1.6</Build-Target-Version>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-maven</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <phase>initialize</phase>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>[${maven.version},)</version>
+                  <message>Check for Maven version &gt;=${maven.version} failed. Update your Maven install.</message>
+                </requireMavenVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
