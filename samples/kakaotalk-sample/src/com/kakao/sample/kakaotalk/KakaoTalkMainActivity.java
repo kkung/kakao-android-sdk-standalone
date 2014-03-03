@@ -32,7 +32,7 @@ import com.kakao.KakaoTalkService;
 import com.kakao.LogoutResponseCallback;
 import com.kakao.UserManagement;
 import com.kakao.UserProfile;
-import com.kakao.sample.kakaotalk.widget.ProfileLayout;
+import com.kakao.widget.ProfileLayout;
 
 /**
  * 카카오톡 API인 프로필를 테스트 한다.
