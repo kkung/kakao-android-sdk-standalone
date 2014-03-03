@@ -25,7 +25,7 @@
             android:text="@string/com_kakao_logout_button" />
     </LinearLayout>
 
-    <com.kakao.sample.kakaotalk.widget.ProfileLayout
+    <com.kakao.widget.ProfileLayout
         android:id="@+id/com_kakao_user_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
