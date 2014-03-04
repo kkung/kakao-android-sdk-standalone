@@ -13,6 +13,15 @@ kakao sdk for android
 + intellij, eclipse
 
 
+apklib
+======
+
+sdk만 별도로 apklib으로 다음과 같이 패키징 할 수 있습니다.
+
+  $ mvn clean package -pl sdk
+  $ ls -al sdk/target/kakao-android-sdk-standalone-apklib-1.0.6.apklib
+
+
 credit
 ======
 
