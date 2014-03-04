@@ -18,14 +18,14 @@ apklib
 
 sdk만 별도로 apklib으로 다음과 같이 패키징 할 수 있습니다.
 
-  $ mvn clean package -pl sdk
-  $ ls -al sdk/target/kakao-android-sdk-standalone-apklib-1.0.6.apklib
+    $ mvn clean package -pl sdk
+    $ ls -al sdk/target/kakao-android-sdk-standalone-apklib-1.0.6.apklib
 
 
 credit
 ======
 
-본 프로젝트는 Kako Developers_(https://developers.kakao.com/) 에서 공개하고 있는
+본 프로젝트는 [Kakao Developers_](https://developers.kakao.com/) 에서 공개하고 있는
 `kakao-android-sdk` 를 기반으로 하고 있습니다.
 
  * Minyoung Jeong (a.k.a. kkung, kkungkkung@gmail.com)
