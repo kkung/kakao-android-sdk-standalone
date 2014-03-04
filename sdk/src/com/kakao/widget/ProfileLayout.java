@@ -18,9 +18,11 @@
  */
 package com.kakao.widget;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.util.AttributeSet;
@@ -151,11 +153,7 @@ public class ProfileLayout extends FrameLayout {
         if (!editable) {
             nicknameText.setEnabled(false);
             nicknameText.setKeyListener(null);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                nicknameText.setBackground(null);
-            } else {
-                nicknameText.setBackgroundDrawable(null);
-            }
+            setBackgroundCompat(nicknameText, null);
             nicknameText.setPadding(0, 0, 0, 0);
             nicknameText.setTextColor(getResources().getColor(R.color.com_kakao_profile_text));
         }
@@ -165,6 +163,15 @@ public class ProfileLayout extends FrameLayout {
         userIdText = (TextView) view.findViewById(R.id.com_kakao_profile_userId);
         if (userId != null)
             userIdText.setText(userId);
+    }
+
+    @TargetApi(16)
+    private void setBackgroundCompat(View v, Drawable drawable) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            v.setBackground(drawable);
+        } else {
+            v.setBackgroundDrawable(drawable);
+        }
     }
 
     /**

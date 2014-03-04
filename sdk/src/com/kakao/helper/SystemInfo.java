@@ -17,6 +17,7 @@
  */
 package com.kakao.helper;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Point;
 import android.os.Build;
@@ -52,6 +53,7 @@ public class SystemInfo {
         return RESOLUTION;
     }
 
+    @TargetApi(13)
     private static Point getSize(Display display) {
         Point point = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
