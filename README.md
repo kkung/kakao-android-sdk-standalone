@@ -1,7 +1,7 @@
-kako-android-sdk-standalone
+kakao-android-sdk-standalone
 ===========================
 
-kako-android-sdk에서 외부 의존성을 모두 제거하여, 별도의 의존성 부담 없이  사용할 수 있도록 수정한 버전입니다.
+kakao-android-sdk에서 외부 의존성을 모두 제거하여, 별도의 의존성 부담 없이  사용할 수 있도록 수정한 버전입니다.
 
 kakao-android-sdk
 =================
